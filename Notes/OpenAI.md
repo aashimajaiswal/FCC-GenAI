@@ -40,4 +40,14 @@ Notes on theory and projects from 5:12:14 to 7:12:54.
 - Tokeniser: https://platform.openai.com/tokenizer
 - charged according to #tokens and they use tokeniser to use this
 
+## Function Calling in OpenAI
+https://platform.openai.com/docs/guides/function-calling
+- make an account on rapidAPI (unable to do so)
+- basically a way to make ur LLM talk with a 3rd party API
+- code isnt working so working here
+    - define a function that calls this 3rd party API, take a note of these params
+    - make a functions thing, make sure required has the params that is being called by ur 3rd party API function
+    - pass it as an argument in completion code
+
+
 
