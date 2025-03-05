@@ -32,6 +32,12 @@ Notes on theory and projects from 5:12:14 to 7:12:54.
 - before installing the packages need to create a virtual enviroment with terminal command `$ conda create -n openaidemo python=3.10 -y`
 - `$ conda init`
 - activate env with `$ conda activate openaidemo`
-- install packages with `$ pip install -r requirements.txt`
+- install packages with `$ pip install -r requirements.txt` // NOT WORKING have to pip install, check why
+- demo continued in openAIDemo1.ipynb
+- Chat Completion API vs Completion API
+    - Completion API: 1 prompt; models supporting have been depricated hence no code
+    - Chat Completion API: Multiple prompts so u can have a convo
+- Tokeniser: https://platform.openai.com/tokenizer
+- charged according to #tokens and they use tokeniser to use this
 
 
