@@ -1,6 +1,6 @@
-# OpenAI Notes
+# OpenAI and Prompt Engineering Notes
 
-Notes on theory and projects from 5:12:14 to 7:12:54.
+Notes on theory and projects from 5:12:14 to 7:42:49.
 
 ## Introduction to OpenAI 
 - Access via Open AI website > API Platform. Currently paid $5.
@@ -8,7 +8,7 @@ Notes on theory and projects from 5:12:14 to 7:12:54.
 - Documentation on the website has everything with code samples.
 - tldr: Gave an overview of the Open AI API Platform.
 
-## Generating Open AI Key
+## Generating OpenAI Key
 - Dashboard > API Keys
 - Params
     - temperature: how much random the model can be with their output (0: null/strict, 1: full freedom/creative)
@@ -79,4 +79,24 @@ A bot that allows you to access ChatGPT via Telegram
     4. `TelegramChatBot/main.py` is where the bot is } code has updated from the time video was made
     5. make sure to add .env for it to work
     6. Figure out how to make it work offline
+
+## Finetuning of GPT-3 model for text classification
+How to fine tune a model and make it personalised to yourself. Gave a high level overview. Look more in. In depth guide here: https://platform.openai.com/docs/guides/fine-tuning
+
+## Whisper and DALLE Project
+Done something similar in MSBA.
+
+## Prompt Engineering
+OpenAI do on prompt engineering: https://platform.openai.com/docs/guides/prompt-engineering
+- Prompt is everything in LLM to get a useful answer
+- Components of Prompt engineering
+    - optimise prompts
+    - perfect interactions between AI and humans
+    - monitor prompts
+    - maintain up to date prompts
+- Best practices: be clear, create a persona, specify format, dont lead w answer, limit scope
+- Types: Zero shot propmting (straight q, no examples to structure response), Few shot prompting (u give response examples)
+- AI hallucination: when LLM gives false information.
+
+
     
