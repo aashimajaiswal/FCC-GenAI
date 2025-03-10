@@ -23,4 +23,16 @@ Overview: High dimensional data is converted into embeddings/vectors and these a
 Documentation: https://docs.trychroma.com/docs/overview/getting-started
 - `!pip`: exclamation tells the jupyter notebook that it is a shell command
     - `pip -q`: q flag is the quiet flag, it supresses the installation messages and only shows the error ones.
+- need: `$ !pip install -U langchain-community`
+- sometimes when you have a lot of input, you need to split it to match the number of max tokens of the model you are using
+    - split it into 'chunks'
+    - chunk size and chunk overlap (common start/ending tokens between consecutive chunks) params
+- make sure u have the correct sqlite version (>= 3.35.1)
+- stores in a binary format so can't see the embeddings directly unlike Pinecone and Weaviate
+- retriever: based on the user query, searches up the documents and sends the relevant source (in our case articles)
+- chain in Langchain: A series of steps using different components to generate a response.
+- import of openai model has changed
+
+Other two skipped as the underlying logic is the same.
+
 
