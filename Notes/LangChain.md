@@ -15,3 +15,16 @@ Doc: https://python.langchain.com/docs/introduction/
     os.environ['OPENAI_API_KEY'] = "<key>"
     os.environ["HUGGINGFACEHUB_API_TOKEN"] = "<key>"
     ```
+- can run langchain with source as a pandas df: https://python.langchain.com/docs/integrations/tools/pandas/
+- hugging face langchain: https://python.langchain.com/docs/integrations/providers/huggingface/
+- code is the same, you just pass different llm names in the `llm` parameter.
+
+## Project: Interview Questions Creator Application
+- What? User provides a document, application uses this document to create interview questions as well as the answers from it
+- To use: Langchain, GPT 3.5, FAISS (vector db), Fast API (to make a UI)
+    - Architecture: Pdf -> Extract Docs -> Chunks -> Embedding model -> Vector Embeddings -> Vector DB
+    - LLM (with appropriate prompt) -> creates questions -> these questions are put again in the model
+- Steps
+    - create conda env // creates an isolated workspace to seperate from other projects that might be using diff versions of packages
+    - create `requirements.txt`
+    - make the `.env` with the required keys
