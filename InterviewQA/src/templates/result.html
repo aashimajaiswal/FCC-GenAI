@@ -2,41 +2,46 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Processing Results</title>
     <style>
       body {
         margin: 0;
         font-family: Arial, sans-serif;
-        background: linear-gradient(180deg, #26a69a, #00796b);
+        background: linear-gradient(180deg, #26a69a, #004d40);
         display: flex;
         justify-content: center;
         align-items: center;
         min-height: 100vh;
         color: #ffffff;
+        padding: 1rem;
       }
       .container {
-        background: rgba(0, 77, 64, 0.85);
+        background: rgba(0, 77, 64, 0.9);
         padding: 2rem;
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-        max-width: 700px;
-        width: 90%;
+        border-radius: 12px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        max-width: 750px;
+        width: 95%;
         text-align: center;
       }
       h1, h2 {
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
+        color: #e0f7fa;
       }
       .qa-pair {
         margin: 1rem 0;
-        padding: 1rem;
-        background-color: rgba(224, 242, 241, 0.5);
-        border-radius: 5px;
+        padding: 1.2rem;
+        background-color: rgba(224, 242, 241, 0.7);
+        border-radius: 8px;
         color: #004d40;
         text-align: left;
+        font-size: 1rem;
       }
       .qa-pair h3 {
         margin: 0;
-        color: #e0f2f1;
+        font-size: 1.1rem;
+        color: #00695c;
       }
       .qa-pair p {
         margin: 0.5rem 0 0;
@@ -44,12 +49,22 @@
       a {
         color: #80cbc4;
         text-decoration: none;
+        font-size: 1rem;
+        font-weight: bold;
+        display: inline-block;
+        margin-top: 1rem;
+        padding: 0.5rem 1rem;
+        border: 2px solid #80cbc4;
+        border-radius: 6px;
+        transition: background 0.3s ease, color 0.3s ease;
       }
       a:hover {
-        text-decoration: underline;
+        background: #80cbc4;
+        color: #004d40;
+        text-decoration: none;
       }
       hr {
-        border: 1px solid rgba(255,255,255,0.3);
+        border: 1px solid rgba(255, 255, 255, 0.3);
         margin: 2rem 0;
       }
     </style>
@@ -57,8 +72,8 @@
   <body>
     <div class="container">
       <h1>Processing Complete!</h1>
-      <p>File uploaded to: <strong>{{ file_path }}</strong></p>
-      <p>Topic: <strong>{{ topic }}</strong></p>
+      <p><strong>File uploaded to:</strong> {{ file_path }}</p>
+      <p><strong>Topic:</strong> {{ topic }}</p>
       <hr>
       <h2>Generated Questions &amp; Answers</h2>
       {% for qa in qa_pairs %}
