@@ -1,7 +1,7 @@
 import os
 import re
 from flask import Flask, render_template, request
-from helper import llm_pipeline  # Make sure your helper module provides llm_pipeline
+from src.helper import llm_pipeline  # Make sure your helper module provides llm_pipeline
 
 app = Flask(__name__)
 

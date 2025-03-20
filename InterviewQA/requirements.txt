@@ -14,4 +14,3 @@ faiss-cpu
 python-dotenv
 flask
 gunicorn
-helper
