@@ -19,17 +19,19 @@ Doc: https://python.langchain.com/docs/introduction/
 - hugging face langchain: https://python.langchain.com/docs/integrations/providers/huggingface/
 - code is the same, you just pass different llm names in the `llm` parameter.
 
-## Project: Interview Questions Creator Application
+## Project: Interview Questions Creator Application `/InterviewQA`
 - What? User provides a document, application uses this document to create interview questions as well as the answers from it
 - To use: Langchain, GPT 3.5, FAISS (vector db), Fast API (to make a UI)
     - Architecture: Pdf -> Extract Docs -> Chunks -> Embedding model -> Vector Embeddings -> Vector DB
     - LLM (with appropriate prompt) -> creates questions -> these questions are put again in the model
 - Steps
     - create conda env // creates an isolated workspace to seperate from other projects that might be using diff versions of packages
-    - create `requirements.txt`
+    - create `requirements.txt` and install using `$ pip install -r 'requirements.txt'`
     - make the `.env` with the required keys
+    - in terminal run `$ python InterviewQA/src/app.py`
 
-## Project: Custom Website Chatbot 
+
+## Project: Custom Website Chatbot `/CustomSiteChatBot`
 - Basic RAG project: supply a website to the llm and ask on questions on that particular website
 - to get the page structure of any website add `/sitemap.xml` to the route like `https://www.google.com.sg/sitemap.xml`
 - Architecture: 
