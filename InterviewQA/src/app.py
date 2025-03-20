@@ -34,9 +34,7 @@ def format_numbered_list(text):
         else:
             if list_lines:
                 # Convert accumulated list lines into an HTML ordered list
-                list_html = "<ol>" + "".join(
-                    f"<li>{re.sub(r'^\d+\.\s+', '', l)}</li>" for l in list_lines
-                ) + "</ol>"
+                list_html = "<ol>" + "".join([f"<li>{re.sub(r'^\d+\.\s+', '', l)}</li>" for l in list_lines]) + "</ol>"
                 new_lines.append(list_html)
                 list_lines = []
             new_lines.append(line)
