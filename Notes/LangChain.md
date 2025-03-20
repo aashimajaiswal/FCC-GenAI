@@ -32,3 +32,8 @@ Doc: https://python.langchain.com/docs/introduction/
 ## Project: Custom Website Chatbot 
 - Basic RAG project: supply a website to the llm and ask on questions on that particular website
 - to get the page structure of any website add `/sitemap.xml` to the route like `https://www.google.com.sg/sitemap.xml`
+- Architecture: 
+    - Website -> sitemap.xml -> links to diff pages -> get doc file of them -> embedding model -> semantic index -> vector db
+    - user asks a q -> goes to vector db -> sends ranked results
+    - ranked results + user query -> llm -> output
+
