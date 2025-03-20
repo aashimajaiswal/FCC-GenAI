@@ -28,6 +28,7 @@ def format_numbered_list(text):
     lines = text.splitlines()
     new_lines = []
     list_lines = []
+    
     for line in lines:
         if re.match(r'^\s*\d+\.\s+', line):
             list_lines.append(line.strip())
@@ -35,16 +36,18 @@ def format_numbered_list(text):
             if list_lines:
                 # Convert accumulated list lines into an HTML ordered list
                 list_html = "<ol>" + "".join([
-    "<li>{}</li>".format(re.sub(r'^\d+\.\s+', '', l)) for l in list_lines
-]) + "</ol>"
+                    "<li>{}</li>".format(re.sub(r'^\d+\.\s+', '', l)) for l in list_lines
+                ]) + "</ol>"
                 new_lines.append(list_html)
                 list_lines = []
             new_lines.append(line)
+    
     if list_lines:
-        list_html = "<ol>" + "".join(
-            f"<li>{re.sub(r'^\d+\.\s+', '', l)}</li>" for l in list_lines
-        ) + "</ol>"
+        list_html = "<ol>" + "".join([
+            "<li>{}</li>".format(re.sub(r'^\d+\.\s+', '', l)) for l in list_lines
+        ]) + "</ol>"
         new_lines.append(list_html)
+    
     return "\n".join(new_lines)
 
 @app.route("/", methods=["GET", "POST"])

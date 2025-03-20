@@ -29,4 +29,6 @@ Doc: https://python.langchain.com/docs/introduction/
     - create `requirements.txt`
     - make the `.env` with the required keys
 
-## Project: Custom
+## Project: Custom Website Chatbot 
+- Basic RAG project: supply a website to the llm and ask on questions on that particular website
+- to get the page structure of any website add `/sitemap.xml` to the route like `https://www.google.com.sg/sitemap.xml`
