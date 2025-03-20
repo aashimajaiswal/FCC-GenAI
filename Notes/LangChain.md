@@ -28,3 +28,5 @@ Doc: https://python.langchain.com/docs/introduction/
     - create conda env // creates an isolated workspace to seperate from other projects that might be using diff versions of packages
     - create `requirements.txt`
     - make the `.env` with the required keys
+
+## Project: Custom
