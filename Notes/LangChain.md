@@ -39,3 +39,5 @@ Doc: https://python.langchain.com/docs/introduction/
     - user asks a q -> goes to vector db -> sends ranked results
     - ranked results + user query -> llm -> output
 
+To use open source llms, you can use Hugging Face.
+

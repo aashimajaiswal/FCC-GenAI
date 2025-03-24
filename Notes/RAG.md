@@ -1,0 +1,13 @@
+# RAG Retrieval Augmented Generation
+- LLMs have limitations
+    - LLMs cant ans qns pertaining to private data
+    - LLMs cant provide the most latest info (they have search now tho)
+- RAG allows LLMs to have access to extra data to give more context specific answers
+- RAG
+    - Retriever: Fetch info
+    - Augmentation: adds query and retrieved info
+    - Generation: augmented thing is send to generate answer
+- RAG vs Fine Tuning
+    - both r used to extend llms context window
+    - Fine Tune: on knowledge that isnt being changed/ updated a lot
+    - else you use RAG
