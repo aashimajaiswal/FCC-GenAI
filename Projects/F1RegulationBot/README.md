@@ -5,4 +5,10 @@
     - Frontend (Telegram): passes it to
     - Backend (OpenAI): passes it to
     - LLM(some GPT model): Sends back a response to Backend -> Frontend -> User
-    - AWS CICD to deploy the application
+    - AWS CI/CD to deploy the application
+
+- setup
+    - create conda env `$ conda create -n F1RegBot python -y`
+    - activate the env `$ conda activate F1RegBot`
+    - install requirements `$ pip install -r requirements.txt`
+- `/__init__.py`: file tells python that this folder is a package/ module from which you can import methods

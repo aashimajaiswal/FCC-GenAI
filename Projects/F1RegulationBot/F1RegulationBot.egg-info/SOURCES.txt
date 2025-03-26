@@ -1,0 +1,9 @@
+README.md
+setup.py
+F1RegulationBot.egg-info/PKG-INFO
+F1RegulationBot.egg-info/SOURCES.txt
+F1RegulationBot.egg-info/dependency_links.txt
+F1RegulationBot.egg-info/top_level.txt
+src/__init__.py
+src/helper.py
+src/prompt.py
